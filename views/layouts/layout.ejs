@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head') %>
-
+<%- include('../partials/head') %>
 <body>
-    <div id="wrapper">
-    <%- include('../partials/header') %>
-    <%- include('../partials/navigation') %>
-    
-    <main>
-    <%- body %> <!-- This is where your index.ejs content will be injected -->
-    </main>
+    <div id="container">
+        <div id="wrapper">
+            <%- include('../partials/header') %>
+            <%- include('../partials/navigation') %>
+            
+        
+            <main>
+                <%- body %>
+            </main>
 
-    <%- include('../partials/footer')  %>
-    </div> 
+            <%- include('../partials/footer') %>
+        </div>
+    </div>
+    <script src="/js/error.js"></script>
 </body>
 </html>
